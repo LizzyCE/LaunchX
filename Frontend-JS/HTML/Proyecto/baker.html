@@ -11,6 +11,135 @@
     <title>LiLu's Cupcakes</title>
 </head>
 <body>
+    <nav>
+        <img src="./menu.png" alt="Menú" class="menu">
+        <div class="navbar-left">
+            <img src="./Lilu's Cupcakes (1).svg" alt="logo" class="logo">
+
+            <ul>
+                <li>
+                    <a href="/">Todo</a>
+                </li>
+                <li>
+                    <a href="/">Sabores</a>
+                </li>
+                <li>
+                    <a href="/">Decoración</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navbar-right">
+            <ul>
+               <li class="navbar-email">cliente@gmail.com</li>
+                <li class="navbar-shopping">
+                <img src="./carro-de-la-carretilla.png" alt="compras">
+               
+               </li>
+            </ul>  
+        </div>
+    </nav>
     
+    <section class="dashboard seccion contenedor">
+        <div class="grafico">
+            <h1>Ventas del mes</h1>
+            <div class="piechart"></div>
+        </div>
+
+        <h2>Inventario</h2>
+        
+        <table class="li-propiedades-contenedor-seccion">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Cantidad disponible</th>                    
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+        
+            <tbody>                
+                <tr>            
+                    <td>1</td>
+                    <td>Chocolate</td>
+                    <td>15</td>                    
+                    <td>
+                    <div class="botones-tabla">                        
+                        <input type="submit" class="boton-tabla amarillo" value="EDITAR">           
+                        <input type="submit" class="boton-tabla rojo" value="ELIMINAR">
+                    </div>                                         
+                    </td>                           
+                </tr>
+                <tr>            
+                    <td>2</td>
+                    <td>Vainilla</td>
+                    <td>11</td>                    
+                    <td>
+                    <div class="botones-tabla">                        
+                        <input type="submit" class="boton-tabla amarillo" value="EDITAR">           
+                        <input type="submit" class="boton-tabla rojo" value="ELIMINAR">
+                    </div>                                         
+                    </td>                           
+                </tr>
+                <tr>            
+                    <td>3</td>
+                    <td>Fresa</td>
+                    <td>22</td>                    
+                    <td>
+                    <div class="botones-tabla">                        
+                        <input type="submit" class="boton-tabla amarillo" value="EDITAR">           
+                        <input type="submit" class="boton-tabla rojo" value="ELIMINAR">
+                    </div>                                         
+                    </td>                           
+                </tr>
+                <tr>            
+                    <td>4</td>
+                    <td>Cafe</td>
+                    <td>6</td>                    
+                    <td>
+                    <div class="botones-tabla">                        
+                        <input type="submit" class="boton-tabla amarillo" value="EDITAR">           
+                        <input type="submit" class="boton-tabla rojo" value="ELIMINAR">
+                    </div>                                         
+                    </td>                           
+                </tr> 
+            </tbody>
+        
+        </table>
+
+        <h2>Pedidos</h2>
+
+        <table class="li-propiedades-seccion">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Celular</th>                    
+                    <th>Correo</th>
+                    <th>Direccion</th>
+                    <th>Resumen Pedido</th>
+                    <th>Estado</th>                    
+                </tr>
+            </thead>
+
+            <tbody>                
+                <tr>            
+                    <td>1</td>
+                    <td>Lizzy CE</td>
+                    <td>5510203040</td>                    
+                    <td>lizzy@launchx.com</td>
+                    <td>CDMX</td>
+                    <td>Sabor Vainilla, Decoración Flores</td>
+                    <td>
+                    <div class="botones-tabla">                        
+                        <input type="submit" class="boton-tabla amarillo" value="CANCELADO">           
+                        <input type="submit" class="boton-tabla verde" value="ENTREGADO">
+                    </div>                                         
+                    </td>                           
+                </tr> 
+            </tbody>
+
+        </table>
+    </section>
 </body>
 </html>
