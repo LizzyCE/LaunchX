@@ -12,6 +12,7 @@ body{
     margin: 0;
     font-family: 'Quicksand', sans-serif;
     background-color: #fae6ff;
+    line-height: 20px;
 }
 
 .logo{
