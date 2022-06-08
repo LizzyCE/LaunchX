@@ -8,6 +8,8 @@
    --lg: 18px;
 }
 
+/*General*/
+
 body{
     margin: 0;
     font-family: 'Quicksand', sans-serif;
@@ -15,8 +17,30 @@ body{
     line-height: 20px;
 }
 
+/*Baker*/
+
+.botones-tabla{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+.boton-tabla{
+  padding: .5rem;
+  color: black;
+  border: none;
+}
+
+.li-propiedades-contenedor-seccion{
+    justify-content: space-between;
+}
+
+/*General*/
+
 .logo{
     height: 200px;
+    margin-bottom: 48px;
 }
 
 .menu{
@@ -143,21 +167,4 @@ nav{
     height: 140px;
   }
 }
-/*Baker*/
 
-.botones-tabla{
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  align-items: center;
-}
-
-.boton-tabla{
-  padding: .5rem;
-  color: black;
-  border: none;
-}
-
-.li-propiedades-contenedor-seccion{
-    justify-content: space-between;
-}
