@@ -17,102 +17,77 @@ body{
     line-height: 20px;
 }
 
-/*Baker*/
-
-.botones-tabla{
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+  /*border-bottom: 1px solid black;*/
+}
+.menu {
+  display: none;
+}
+.logo {
+  width: 150px;
+}
+.navbar-left ul,
+.navbar-right ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 75px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+.navbar-left {
+  display: flex;
+}
+.navbar-left ul {
+  margin-left: 12px;
+}
+.navbar-left ul li a,
+.navbar-right ul li a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid var(--white);
+  padding: 8px;
+  border-radius: 8px;
+}
+.navbar-left ul li a:hover,
+.navbar-right ul li a:hover {
+  border: 1px solid #ff73c9;
+  color: #ff73c9;
+}
+.navbar-email {
+  color: #ff73c9;
+  font-size: var(--sm);
+  margin-right: 12px;
+}
+.navbar-shopping-cart {
+  position: relative;
+}
+.navbar-shopping-cart div {
+  width: 16px;
+  height: 16px;
+  background-color: #ff73c9;
+  border-radius: 50%;
+  font-size: var(--sm);
+  font-weight: bold;
+  position: absolute;
+  top: -6px;
+  right: -3px;
   display: flex;
   justify-content: center;
-  gap: 1rem;
   align-items: center;
 }
 
-.boton-tabla{
-  padding: .5rem;
-  color: black;
-  border: none;
-}
-
-.li-propiedades-contenedor-seccion{
-    justify-content: space-between;
-}
-
-/*General*/
-
-.logo{
-    height: 200px;
-    margin-bottom: 48px;
-}
-
-.menu{
-    display: none;
-    height: 40px;
-    margin-top: 82px;
-}
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 24px;
-    border-bottom: 1px solid lavenderblush;
-}
-
-.navbar-right ul,
-.navbar-left ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-}
-
-.navbar-left{
-    display: flex;
-}
-
-.navbar-right{
-    display: flex;
-}
-
-.navbar-left ul{
-    margin-left: 12px;
-}
-
-
-.navbar-right ul li a,
-.navbar-left ul li a{
-    text-decoration: none;
-    color: var(--black);
-    border: 1px solid var(--white);
-    padding: 8px;
-    border-radius: 8px;
-}
-
-.navbar-right ul li a:hover,
-.navbar-left ul li a:hover{
-    color: #ff73c9;
-    border: 1px solid #FF73C9;
-}
-
-.navbar-email{
-    color: lightcoral;
-    font-size: var(--sm);
-    margin-right: 12px;
-}
-
-.navbar-shopping{
-   position: relative;  
-}
-
-.navbar-shopping img{
-    height: 40px;
-}
 
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, 240px);
-  gap: 26px;
+  gap: 30px;
   place-content: center;
 }
+
 .product-card {
   width: 240px;
 }
@@ -132,13 +107,13 @@ nav{
   margin: 0;
 }
 .product-info figure img {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
 }
 .product-info div p:nth-child(1) {
   font-weight: bold;
   font-size: var(--md);
-  margin-top: 0;
+  margin-top: 0px;
   margin-bottom: 4px;
 }
 .product-info div p:nth-child(2) {
@@ -146,17 +121,39 @@ nav{
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.second-container{
+  display: flex;
+  place-content: center;
+  margin-top: 40px;
+  height: 450;
+  margin-bottom: 40px;
+}
+
+.logo{
+    height: 200px;
+    margin-bottom: 48px;
+}
+
+.menu{
+    display: none;
+    height: 40px;
+    margin-top: 82px;
+}
+
 @media (max-width: 640px) {
-    .menu {
-        display: block;
-      }
-      .navbar-left ul {
-        display: none;
-      }
-      .navbar-email {
-        display: none;
-      }
-    .cards-container {
+  
+  .menu {
+    display: block;
+  }
+  .navbar-left ul {
+    display: none;
+  }
+  .navbar-email {
+    display: none;
+  }
+
+  .cards-container {
     grid-template-columns: repeat(auto-fill, 140px);
   }
   .product-card {
@@ -166,5 +163,32 @@ nav{
     width: 140px;
     height: 140px;
   }
+
+  .mobile-menu ul:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  
+    
+}
+
+/*Baker*/
+
+.botones-tabla{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+.boton-tabla{
+  padding: .5rem;
+  color: black;
+  border: none;
+}
+
+.li-propiedades-contenedor-seccion{
+    justify-content: space-between;
 }
 
