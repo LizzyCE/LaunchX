@@ -45,11 +45,13 @@
     }
 
 .form a{
-    color: #ff73c9;
-    font-size: var(--sm);
-    text-align: center;
-    text-decoration: none;
-    margin-bottom: 52px;
+text-decoration: none;
+text-align: center;
+font-weight: bold;
+  color: #ff73c9;
+  border: 1px solid #ff73c9;
+  padding: 15px;
+  border-radius: 8px;
 }    
 
 .label {
@@ -72,7 +74,11 @@
     margin-bottom: 22px;
 }
 
-.primary-button{
+.primary-button a{
+    color: white;
+}
+
+/*.primary-button{
     background-color:  #ff73c9;
     border-radius: 8px;
     border: none;
@@ -82,7 +88,9 @@
     font-size: var(--md);
     font-weight: bold;
     height: 50px;
-}
+}*/
+
+
 
 .secondary-button{
     background-color:  var(--lilac);
